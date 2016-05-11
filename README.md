@@ -4,7 +4,7 @@
 
 ## Learning Objectives - The student should be able to..
 
-* Create variables being the result of an arithmetic operation as such (you don't have to run with this example, just typed this up quickly to get a sense of what I think the student should understand they could do).
+* Set variables where the value's are of type `Int` and then perform math operations on those variables, like so:
 
 ```swift
 let combinedAgesOfFamily = 30 + 29 + 64 + 65
@@ -26,6 +26,12 @@ func addTwoNumbers(first: Int, second: Int) -> Int {
     return first + second
 }
 ```
+* Explain the various amount of math operations
+	* Addition (+)
+	* Subtraction (-)
+	* Multiplication (*)
+	* Division (/)
+	* Remainder Operator (%)
 
 
 
@@ -46,19 +52,19 @@ func addTwoNumbers(first: Int, second: Int) -> Int {
 * I like the idea of showing them something like this:
 
 ```swift
-let thirty = 30
-let three = 3
-let solution = thirty / three
+let numberOfStudents = 30
+let numberOfTeachers = 3
+let classroomsNeeded = numberOfStudents / numberOfTeachers
 ```
 
-* When they type something like that, have them option click the variable `thirty` to remind that this variable is of type Int. Because of this, we can perform math operations on it:
+* When they type something like that, have them option click the variable `numberOfStudents` to remind that this variable is of type Int. Because of this, we can perform math operations on it. Make sure that you provide an example for each operation.
 	* Addition (+)
 	* Subtraction (-)
 	* Multiplication (*)
 	* Division (/)
 	* Remainder Operator (%)
 	
-* Have them piece together their new knowledge of these various operators into creating various functions that perform math operations like so. You can structure this how you like (wrote this fast as an example)
+* Have them piece together their new knowledge of these various operators into creating various functions that perform math operations like so. You can structure this how you like (wrote this fast as an example). Talk in depth (again as this would be the second explanation of the return keyword) about return.
 
 ```swift
 func addTwoNumbers(first: Int, second: Int) -> Int {
