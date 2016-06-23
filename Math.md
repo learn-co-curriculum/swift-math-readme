@@ -1,11 +1,27 @@
 ##Float and Double
 You've already learned about the String and Int types; Strings are values like "hello" or "eat your vegetables", and Ints are whole number values like 34 and 9561.  
 
+````Swift
+let greeting = "hello"
+let momsOrder = "eat your vegetables!"
+````
+
 Strings may form the backbone of displaying instructions and values to the user, but numbers (and especially mathematical operations on those numbers) are necessary for actually drawing that text to the screen, as well as pretty much every thing the operating system and your applications do, from computing how many days are left in a subscripton to centering a button in window.  
 
 Another kind of number are Float and Double, which represent decimal values such as 0.5 or 3.14159.  The difference between Float and Double is magnitude and precision: Floats are represented in 32 bits and Doubles are represented in 64 bits, so Doubles have the potential for greater magnitude and precision.
 
+Taken from Apples Documentation: 
+Double has a precision of at least 15 decimal digits, whereas the precision of Float can be as little as 6 decimal digits. The appropriate floating-point type to use depends on the nature and range of values you need to work with in your code. In situations where either type would be appropriate, Double is preferred.
+
 You can recognize Floats and Doubles by value because they will have a decimal point; the Swift compiler will interpret any number with a decimal point as a Double unless you specify that it should be recognized as a Float.  Any number without a decimal point will be interpreted by the compiler as an Int.
+
+````Swift
+let intNumber = 50
+// intNumber is a constant of type Int with a value of 50
+
+let doubleNumber = 3.225
+// doubleNumber is a constant of type Double with a value of 3.225
+````
 
 ##Mathematical Operations
 The four primary operators in math are addition (+), subtraction (-), multiplication (*), and division (/); the fifth operator is remainder (%).  For example:
@@ -20,28 +36,45 @@ The four primary operators in math are addition (+), subtraction (-), multiplica
  ```Swift
  let a = 4
  let b = 12
- let n = b / a   (3)
- let r = b % a   (0)
- let product = a * b   (48)
- let sum = a + b   (16)
- let difference = b - a   (8)
+ let n = b / a   // 3
+ let r = b % a   // 0
+ let product = a * b   // 48
+ let sum = a + b   /// 16
+ let difference = b - a   // 8
+
+ // note that every variable above is of type Int because of type inference.
  ````
 
  and using Floats...  (because there's a decimal the compiler knows it's a Float)
 
 ````Swift
  let x = 5.5
+ // x is a constant of type Double with a value of 5.5
+ 
  let y = 10.0
- let n = y / x  (1.8181...)
- let r = y % x   (4.5)
- let proudct = x * y   (55)
- let sum = x + y  (15.5)
- let difference = y - x  (4.5)
+ // y is a constant of type Double with a value of 10.0
+ 
+ var n = y / x  // 1.8181...
+ // n is a variable of type Double with a value of 1.8181...
+ 
+ let r = y % x   // 4.5
+ // r is a constant of type Double with a value of 4.5
+ 
+ let product = x * y   // 55
+ // product is a constant of type Double with a value of 55
+ 
+ var sum = x + y  // 15.5
+ // sum is a variable of type Double with a value of 15.5
+ 
+ let difference = y - x  // 4.5
+ // difference is a variable of type Double with a value of 4.5
  ````
  
  So far this should all remind you of your days back in math class with Mr. Mcgregor.  There is, however, something that you may find surprising about how Swift handles math.
  
- What if we multiply an Int and Float, like a * x as shown above?  Well, the compiler gives us an error which seems very unfriendly!  Why is that?
+What if we multiply an Int and Float, like a * x as shown above?  Well, the compiler gives us an error which seems very unfriendly!  Why is that?
+
+![error](http://i.imgur.com/y7pMBRG.png?1)
  
 Remember that one of the key features of Swift is that it's a type-safe language; that means its very, very particular about what kind of types it expects in any given situation and will unceremoniously give you an error whenever you provide it a type it doesn't like.
 
@@ -50,8 +83,8 @@ In Mathematical operations Swift only lets you use values of the same type becau
 If you want to mix types in mathematical expressions you must tell Swift explicitly what you want to convert.
  
 ````Swift
- let sum = a + Int(x)    (9)
- let sum = Double(a) + x   (9.5)
+ let sum = a + Int(x)    // 9
+ let sum = Double(a) + x   // 9.5
  ````
  
  You can easily explore and experiment with mathetimatical operations in a Playground.
@@ -63,10 +96,16 @@ If you want to mix types in mathematical expressions you must tell Swift explici
  Most functions return some kind of value; either something which is retrieved, computed, or just a code indicating success or failure.  For example, here's a function which returns the average of two Doubles:
 
 ````Swift
- func average(a:Double, b:Double, c:Double) -> Double {
- 	return ( a + b + c ) / 3.0
- 	}
- 	````
+func average(a: Int, _ b: Int) -> Int {
+    return (a + b) / 2
+}
+
+let midTermGrade = 70
+let finalGrade = 100
+average(midTermGrade, finalGrade)  // 85
+````
+ 	
+Here we've created a function named average which takes in two arguments of type Int and returns back an Int. The implementation of this function takes the sum of the two arguments being passed in, divides that sum by 2 and returns back the result which will be of type Int. Here, we're calling on this function by passing in our mid term and final grades to get back the average.
  	
  You can also have a function which returns the average of three Ints:
 
@@ -74,14 +113,24 @@ If you want to mix types in mathematical expressions you must tell Swift explici
  	 func average(a:Double, b:Double, c:Double) -> Double {
  	return ( a + b + c ) / 3.0
  	}
- 	````
  	
+ let first = 42.10
+let second = 44.98
+let third = 50.31
+
+average(first, second, third) // 45.79666666666666
+ ````
+Here we're creating a function named average which takes in three arguments, all of type Double and returns back a Double. The implementation of this function takes the sum of the three arguments then divides that sum by 3.0. It returns that value of type Double to the caller of this function. Here we provide an example of calling on this function passing in three arguments of type Double.
+
 It's also perfectly OK to have a function which doesn't take any arguments or return any value:
  
 ````Swift
  	func sayHello() {
  		print("Hello")
  	}
+ 	
+ sayHello()
+// prints "Hello"
 ````
 
 ##Summary
