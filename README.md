@@ -1,48 +1,21 @@
 # Math
 
+![George](http://i.imgur.com/Kz9FGiV.jpg?1)
+
+> Do not wait; the time will never be 'just right.' Start where you stand, and work with whatever tools you may have at your command, and better tools will be found as you go along. -[George Herbert](https://en.wikipedia.org/wiki/George_Herbert)
 
 
-## Learning Objectives - The student should be able to..
+## Learning Objectives 
 
-* Set variables where the value's are of type `Int` and then perform math operations on those variables, like so:
-
-```swift
-let combinedAgesOfFamily = 30 + 29 + 64 + 65
-// 188
-
-let myAge = 30
-let brothersAge = 29
-let momsAge = 64
-let dadsAge = 65
-let combinedAgesOfFamily2 = myAge + brothersAge + momsAge + dadsAge
-// 188
-```
-
+* Set variables where the value's are of type `Int` and then perform math operations on those variables.
 * Create variables of type `Double`. 
-* Create a function like this on their own:
 
-```swift
-func addTwoNumbers(first: Int, second: Int) -> Int {
-    return first + second
-}
-```
 * Explain the various amount of math operations
 	* Addition (+)
 	* Subtraction (-)
 	* Multiplication (*)
 	* Division (/)
 	* Remainder Operator (%)
-
-
-
-
-## What the student can do at this point 
-
-* Create variables and constants
-* Is familiar with type annotations, type inference and string interpolation. 
-* Has just learned how to create functions with return types.
-* The only types they know at this point are String and Int.
-
 
 
 ## Outline / Notes
