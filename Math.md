@@ -6,7 +6,7 @@ let greeting = "hello"
 let momsOrder = "eat your vegetables!"
 ````
 
-Strings may form the backbone of displaying instructions and values to the user, but numbers (and especially mathematical operations on those numbers) are necessary for actually drawing that text to the screen, as well as pretty much every thing the operating system and your applications do, from computing how many days are left in a subscripton to centering a button in window.  
+Strings may form the backbone of displaying instructions and values to the user, but numbers (and especially mathematical operations on those numbers) are necessary for actually drawing that text to the screen, as well as pretty much every thing the operating system and your applications do, from computing how many days are left in a subscription to centering a button in window.  
 
 Another kind of number are Float and Double, which represent decimal values such as 0.5 or 3.14159.  The difference between Float and Double is magnitude and precision: Floats are represented in 32 bits and Doubles are represented in 64 bits, so Doubles have the potential for greater magnitude and precision.
 
@@ -78,7 +78,7 @@ What if we multiply an Int and Float, like a * x as shown above?  Well, the comp
  
 Remember that one of the key features of Swift is that it's a type-safe language; that means its very, very particular about what kind of types it expects in any given situation and will unceremoniously give you an error whenever you provide it a type it doesn't like.
 
-In Mathematical operations Swift only lets you use values of the same type because (as we've learned over the past several decades with langauges which "helpfully" convert and combine types for us) mixing types can lead to unexpected results such as loss of precision.
+In Mathematical operations Swift only lets you use values of the same type because (as we've learned over the past several decades with languages which "helpfully" convert and combine types for us) mixing types can lead to unexpected results such as loss of precision.
 
 If you want to mix types in mathematical expressions you must tell Swift explicitly what you want to convert.
  
@@ -87,7 +87,7 @@ If you want to mix types in mathematical expressions you must tell Swift explici
  let sum = Double(a) + x   // 9.5
  ````
  
- You can easily explore and experiment with mathetimatical operations in a Playground.
+ You can easily explore and experiment with mathematical operations in a Playground.
  
  
 ##Functions
@@ -134,11 +134,11 @@ It's also perfectly OK to have a function which doesn't take any arguments or re
 ````
 
 ##Summary
-In addition to Ints, which are whole numbers, we also have Floats and Doubles which are used to represent decimal values.  We have built-in mathematic operators for addition (+), subtraction (-), multipilcation (*), division (/) and remainder (%).
+In addition to Ints, which are whole numbers, we also have Floats and Doubles which are used to represent decimal values.  We have built-in mathematic operators for addition (+), subtraction (-), multiplication (*), division (/) and remainder (%).
 
 Swift is type-safe and only allows mathematical operators to be used on the same types (Int and Int, Long and Long, Float and Float, Double and Double) ; if you want to perform math on two different types you must either cast one to the type of the other (e.g. 3.0 * Double(4)) or cast them both to some other type (e.g.	  Double(5) * Double(13) ).
 
-Functions are the primary way of reducing and managing complexity in your application code.  Functions can take one parameter, multiple parameters, or no paramters, and can return a single value or no value.
+Functions are the primary way of reducing and managing complexity in your application code.  Functions can take one parameter, multiple parameters, or no parameters, and can return a single value or no value.
 
  	
  
