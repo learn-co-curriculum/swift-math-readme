@@ -130,7 +130,7 @@ Here we've created a function named average which takes in two arguments of type
  You can also have a function which returns the average of three Ints:
 
 ````Swift
- 	 func average(a:Double, b:Double, c:Double) -> Double {
+ 	 func average(a:Double, _ b:Double, _ c:Double) -> Double {
  	return ( a + b + c ) / 3.0
  	}
  	
@@ -163,3 +163,5 @@ Functions are the primary way of reducing and managing complexity in your applic
  
 
 <a href='https://learn.co/lessons/Math' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-math-readme'>Math</a> on Learn.co and start learning to code for free.</p>
