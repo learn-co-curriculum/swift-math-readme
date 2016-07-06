@@ -65,7 +65,7 @@ The four primary operators in math are addition (+), subtraction (-), multiplica
  // note that every variable above is of type Int because of type inference.
  ````
 
- and using Floats...  (because there's a decimal the compiler knows it's a Float)
+ and using Doubles...  (because there's a decimal the compiler knows it's a Double)
 
 ````Swift
  let x = 5.5
@@ -163,3 +163,5 @@ Functions are the primary way of reducing and managing complexity in your applic
  
 
 <a href='https://learn.co/lessons/Math' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-math-readme'>Math</a> on Learn.co and start learning to code for free.</p>
