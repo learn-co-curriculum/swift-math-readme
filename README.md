@@ -4,21 +4,18 @@
 
 > Do not wait; the time will never be 'just right.' Start where you stand, and work with whatever tools you may have at your command, and better tools will be found as you go along. -[George Herbert](https://en.wikipedia.org/wiki/George_Herbert)
 
+## Overview
+
+In this lesson, we'll explore `Int` and `Double` types and perform various math operations in Swift. 
 
 ## Learning Objectives 
 
-* Set variables where the value's are of type `Int` and then perform math operations on those variables.
-* Create variables of type `Double`. 
-
-* Explain the various amount of math operations
-	* Addition (+)
-	* Subtraction (-)
-	* Multiplication (*)
-	* Division (/)
-	* Remainder Operator (%)
-
+* Set variables where the value's are of type `Int` and then perform math operations on those variables
+* Create variables of type `Double`
+* Explain various math operations, including addition, subtraction, multiplication, division, and the remainder operator
 
 ##Float and Double
+
 You've already learned about the String and Int types; Strings are values like "hello" or "eat your vegetables", and Ints are whole number values like 34 and 9561.  
 
 ````Swift
