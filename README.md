@@ -113,13 +113,13 @@ If you want to mix types in mathematical expressions you must tell Swift explici
  Most functions return some kind of value; either something which is retrieved, computed, or just a code indicating success or failure.  For example, here's a function which returns the average of two Doubles:
 
 ````Swift
-func average(a: Int, _ b: Int) -> Int {
+func average(a: Int, b: Int) -> Int {
     return (a + b) / 2
 }
 
 let midTermGrade = 70
 let finalGrade = 100
-average(midTermGrade, finalGrade)  // 85
+average(midTermGrade, b: finalGrade)  // 85
 ````
  	
 Here we've created a function named average which takes in two arguments of type Int and returns back an Int. The implementation of this function takes the sum of the two arguments being passed in, divides that sum by 2 and returns back the result which will be of type Int. Here, we're calling on this function by passing in our mid term and final grades to get back the average.
@@ -135,7 +135,7 @@ Here we've created a function named average which takes in two arguments of type
 let second = 44.98
 let third = 50.31
 
-average(first, second, third) // 45.79666666666666
+average(first, b: second, c: third) // 45.79666666666666
  ````
 Here we're creating a function named average which takes in three arguments, all of type Double and returns back a Double. The implementation of this function takes the sum of the three arguments then divides that sum by 3.0. It returns that value of type Double to the caller of this function. Here we provide an example of calling on this function passing in three arguments of type Double.
 
