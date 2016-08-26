@@ -10,9 +10,10 @@ In this lesson, we'll explore `Int` and `Double` types and perform various math 
 
 ## Learning Objectives 
 
-* Set variables where the value's are of type `Int` and then perform math operations on those variables
+* Set variables where the values are of type `Int` and then perform math operations on those variables
 * Create variables of type `Double`
 * Explain various math operations, including addition, subtraction, multiplication, division, and the remainder operator
+* Use math operations in functions
 
 ##Float and Double
 
@@ -27,10 +28,9 @@ Strings may form the backbone of displaying instructions and values to the user,
 
 Another kind of number are Float and Double, which represent decimal values such as 0.5 or 3.14159.  The difference between Float and Double is magnitude and precision: Floats are represented in 32 bits and Doubles are represented in 64 bits, so Doubles have the potential for greater magnitude and precision.
 
-Taken from Apples Documentation: 
-Double has a precision of at least 15 decimal digits, whereas the precision of Float can be as little as 6 decimal digits. The appropriate floating-point type to use depends on the nature and range of values you need to work with in your code. In situations where either type would be appropriate, Double is preferred.
+Here's what we have from Apple documentation: *Double has a precision of at least 15 decimal digits, whereas the precision of Float can be as little as 6 decimal digits. The appropriate floating-point type to use depends on the nature and range of values you need to work with in your code. In situations where either type would be appropriate, Double is preferred.*
 
-You can recognize Floats and Doubles by value because they will have a decimal point; the Swift compiler will interpret any number with a decimal point as a Double unless you specify that it should be recognized as a Float.  Any number without a decimal point will be interpreted by the compiler as an Int.
+You can recognize Floats and Doubles by value because they will have a decimal point. The Swift compiler will interpret any number with a decimal point as a Double unless you specify that it should be recognized as a Float. Any number without a decimal point will be interpreted by the compiler as an Int.
 
 ````Swift
 let intNumber = 50
@@ -48,7 +48,7 @@ The four primary operators in math are addition (+), subtraction (-), multiplica
 5 % 3 = 2
 ````
  
- Similarly, you can assign Int and Float values to variables and perform math operations.  For example:
+ Similarly, you can assign Int and Float values to variables and perform math operations. For example:
 
  ```Swift
  let a = 4
@@ -108,7 +108,8 @@ If you want to mix types in mathematical expressions you must tell Swift explici
  
  
 ##Functions
- Functions, as mentioned in an earlier unit, are the primary means of reducing complexity and making programs easier to read.  Instead of having hundreds or thousands (or tens of thousands) of lines of code, you can break that up in functions to make you code easier to understand.  Some functions are just a single line and others are hundreds of lines of code but a good rule of thumb is that a function should be between 10 and 100 lines of code; fewer lines of code than that and creating the function may not be worth the trouble, and more lines of code than that means you probably have more complexity than you want and should probably break that function into two or more functions if possible.
+
+Functions are the primary means of reducing complexity and making programs easier to read. Instead of having hundreds or thousands (or tens of thousands) of lines of code, you can break that up in functions to make you code easier to understand. Some functions are just a single line and others are hundreds of lines of code but a good rule of thumb is that a function should be between 10 and 100 lines of code; fewer lines of code than that and creating the function may not be worth the trouble, and more lines of code than that means you probably have more complexity than you want and should probably break that function into two or more functions if possible.
  
  Most functions return some kind of value; either something which is retrieved, computed, or just a code indicating success or failure.  For example, here's a function which returns the average of two Doubles:
 
@@ -153,12 +154,9 @@ It's also perfectly OK to have a function which doesn't take any arguments or re
 ##Summary
 In addition to Ints, which are whole numbers, we also have Floats and Doubles which are used to represent decimal values.  We have built-in mathematic operators for addition (+), subtraction (-), multiplication (*), division (/) and remainder (%).
 
-Swift is type-safe and only allows mathematical operators to be used on the same types (Int and Int, Long and Long, Float and Float, Double and Double) ; if you want to perform math on two different types you must either cast one to the type of the other (e.g. 3.0 * Double(4)) or cast them both to some other type (e.g.	  Double(5) * Double(13) ).
+Swift is type-safe and only allows mathematical operators to be used on the same types (Int and Int, Long and Long, Float and Float, Double and Double); if you want to perform math on two different types you must either cast one to the type of the other (e.g. 3.0 * Double(4)) or cast them both to some other type (e.g.	  Double(5) * Double(13) ).
 
 Functions are the primary way of reducing and managing complexity in your application code.  Functions can take one parameter, multiple parameters, or no parameters, and can return a single value or no value.
 
- 
-
-<a href='https://learn.co/lessons/Math' data-visibility='hidden'>View this lesson on Learn.co</a>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/swift-math-readme'>Math</a> on Learn.co and start learning to code for free.</p>
