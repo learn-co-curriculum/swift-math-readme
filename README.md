@@ -120,7 +120,7 @@ func average(a: Int, b: Int) -> Int {
 
 let midTermGrade = 70
 let finalGrade = 100
-average(midTermGrade, b: finalGrade)  // 85
+average(a: midTermGrade, b: finalGrade)  // 85
 ````
  	
 Here we've created a function named average which takes in two arguments of type Int and returns back an Int. The implementation of this function takes the sum of the two arguments being passed in, divides that sum by 2 and returns back the result which will be of type Int. Here, we're calling on this function by passing in our mid term and final grades to get back the average.
@@ -128,26 +128,26 @@ Here we've created a function named average which takes in two arguments of type
  You can also have a function which returns the average of three Ints:
 
 ````Swift
- 	 func average(a:Double, b:Double, c:Double) -> Double {
+func average(a: Double, b: Double, c: Double) -> Double {
  	return ( a + b + c ) / 3.0
- 	}
+}
  	
- let first = 42.10
+let first = 42.10
 let second = 44.98
 let third = 50.31
 
-average(first, b: second, c: third) // 45.79666666666666
+average(a: first, b: second, c: third) // 45.79666666666666
  ````
 Here we're creating a function named average which takes in three arguments, all of type Double and returns back a Double. The implementation of this function takes the sum of the three arguments then divides that sum by 3.0. It returns that value of type Double to the caller of this function. Here we provide an example of calling on this function passing in three arguments of type Double.
 
 It's also perfectly OK to have a function which doesn't take any arguments or return any value:
  
 ````Swift
- 	func sayHello() {
- 		print("Hello")
- 	}
+func sayHello() {
+ 	print("Hello")
+}
  	
- sayHello()
+sayHello()
 // prints "Hello"
 ````
 
