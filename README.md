@@ -111,7 +111,7 @@ If you want to mix types in mathematical expressions you must tell Swift explici
 
 Functions are the primary means of reducing complexity and making programs easier to read. Instead of having hundreds or thousands (or tens of thousands) of lines of code, you can break that up in functions to make you code easier to understand. Some functions are just a single line and others are hundreds of lines of code but a good rule of thumb is that a function should be between 10 and 100 lines of code; fewer lines of code than that and creating the function may not be worth the trouble, and more lines of code than that means you probably have more complexity than you want and should probably break that function into two or more functions if possible.
  
- Most functions return some kind of value; either something which is retrieved, computed, or just a code indicating success or failure.  For example, here's a function which returns the average of two Doubles:
+ Most functions return some kind of value; either something which is retrieved, computed, or just a code indicating success or failure.  For example, here's a function which returns the average of two `Int`s:
 
 ````Swift
 func average(a: Int, b: Int) -> Int {
@@ -125,7 +125,7 @@ average(a: midTermGrade, b: finalGrade)  // 85
  	
 Here we've created a function named average which takes in two arguments of type Int and returns back an Int. The implementation of this function takes the sum of the two arguments being passed in, divides that sum by 2 and returns back the result which will be of type Int. Here, we're calling on this function by passing in our mid term and final grades to get back the average.
  	
- You can also have a function which returns the average of three Ints:
+ You can also have a function which returns the average of three `Double`s:
 
 ````Swift
 func average(a: Double, b: Double, c: Double) -> Double {
